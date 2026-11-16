@@ -1,0 +1,39 @@
+<div class="page-shell">
+  <header class="top-bar">
+    <h1>Conference App</h1>
+    <p>Bienvenue sur votre espace utilisateur</p>
+  </header>
+
+  <nav class="main-nav" aria-label="Navigation principale">
+    <a href="#">Accueil</a>
+    <a href="#">Profil</a>
+    <a href="#">Conférences</a>
+    <a href="#">Amis</a>
+    <a href="#">Notifications</a>
+    <a href="#">Admin</a>
+  </nav>
+
+  <main>
+    <section class="card profile-card">
+      <h2>Profil utilisateur</h2>
+      <p><strong>Nom :</strong> Ahmed</p>
+      <p><strong>Email :</strong> ahmed@email.com</p>
+    </section>
+
+    <section class="card friends-card">
+      <h2>Liste des amis</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Nom</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let friend of friends">
+            <td>{{ friend }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+</div>
